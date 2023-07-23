@@ -1,0 +1,8 @@
+{
+  "name": "upload",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "start": "node script"
+  }
+}

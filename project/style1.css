@@ -1,0 +1,179 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-image: url("bg image.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    filter:transparent;
+  }
+  .container{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  .formWraper{
+    display: flex;
+    width: 55%;
+    height: 610px;
+    background-color: green;
+    margin-top: 80px;
+    border-radius: 10px;
+    box-shadow:0px 0px 20px black;
+  }
+  
+  /* code for left sectin of form */
+  .formDiv{
+    width: 50%;
+    padding: 8%;
+    background-color: lavender;
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+  }
+  .formDiv h2 {
+    color: green;
+    margin-top: -5px;
+  }
+  
+  /* code for right sectin of the registration form */
+  .welcomeDiv{
+    width: 50%;
+    padding: 10px;
+    background-size: cover;
+    text-align: center;
+    color: white;
+  }  
+  .welcomeDiv h2 {
+    margin-top: 150px;
+  }
+  
+  
+  /* ---- code for Font Awsome social icons */
+  .socialBtn{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color:lavender;
+    margin: 5px;
+    line-height: 30px;
+    box-shadow: 3px 3px 10px black;
+     
+  }
+  
+  
+  
+  .text{
+    font-size: medium;
+  }
+  .orDiv {
+    width: 10%;
+    margin: 0 auto;
+    background-color: lavender;
+    position: relative;
+    top: -16px;
+    justify-content: center;
+  }
+  
+  /* code for form input fields */
+  .formGroup{
+    width: 100%;
+    position: relative;
+  }
+  .formGroup input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-style:none;
+    padding-left: 30px !important;
+  }
+  
+  
+  /* Code for Icones inside html form input */
+  .formGroup i {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    color: grey;
+    font-size: smaller;
+    margin: 10px !important;
+  }
+  
+  
+  input::placeholder {
+    position: relative;
+    left: 10px;
+  }
+  input:focus{
+    border-color: red;
+  }
+  .checkBox{
+    width: 100%;
+    margin-top: 2px;
+  }
+  
+  .btn{
+    width: 50%;
+    padding: 13px;
+    background-color: green;
+    margin-top: 13px;
+    color: lavender;
+    border-radius: 15px;
+    border-style: none;
+  }
+  .btn2{
+    width: 50%;
+    padding: 13px;
+    background-color:transparent;
+    margin-top: 13px;
+    color: lavender;
+    border-radius: 15px;
+    border-style: none;
+    border: 2px solid rgb(247, 243, 243);
+  }
+  
+  /* CSS mouse hover efects */
+  .btn:hover, .btn2:hover, .icon:hover{
+    background-color: rgb(7, 80, 35);
+    color: whitesmoke;
+  }
+  
+ #message{
+  bottom: -30px;
+  font-size: 15px;
+  display: none;
+ }
+
+ #mailmsg{
+  bottom: -30px;
+  font-size: 15px;
+  display: none;
+ }
+
+ #text.valid::before,
+ #text.invalid::before{
+
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 8px;
+  right: 5px;
+  z-index: 100;
+  object-fit: fill;
+ }
+
+ #text.valid::before{
+
+  background: url(check.svg)no-repeat center /cover;
+ }
+
+ #text.invalid::before{
+
+  background: url(error.png)no-repeat center /cover;
+ }

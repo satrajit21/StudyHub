@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Or Join Meeting</title>
+    <link rel="stylesheet" href="public/Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="public/Assets/css/style1.css">
+
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="logo.gif" class="logo">
+            <ul>
+                <li><a href="http://localhost/project/index.php">HomePage<span class="material-icons mr-2">home</span></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class = "content">
+        <img src="200w.gif">
+        <h1>StudyHub for meetings.</h1>
+        <p> Freely available to everyone.<br>We're designing the STUDY HUB service for secure business meetings and making it free for everyone to use.</p>
+    
+    <div>
+        
+                <button class="btn btn-lg btn-outline-secondary text-dark font-weight-bold display-center" style="background-color: rgb(186, 237, 186);"><span class="material-icons mr-2">key</span><input type="text" placeholder="Enter a code" style="border: 1px;in;" class="enter-code"></button>
+            
+                <button class="btn1 text-white font-weight-bold pl-2 join-action"><span class="joinsp"></span>Join</button>
+ 
+    </div>
+</div>
+<div class="footer">
+    <p>|| Enjoy the meeting with STUDY HUB ||</p>
+  </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            $(document).on("click", ".join-meeting", function(){
+                $(".enter-code").focus();
+            })
+            $(document).on("click", ".join-action", function(){
+                var join_value = $('.enter-code').val();
+                var meetingUrl = window.location.origin+"?meetingID="+join_value;
+                window.location.replace(meetingUrl);
+            })
+            $(document).on("click", ".new-meeting", function(){
+               var eight_d_value = Math.floor(Math.random()*100000000);
+                var meetingUrl = window.location.origin+"?meetingID="+eight_d_value;
+                window.location.replace(meetingUrl);
+            })
+
+        })
+    </script>
+
+</body>
+</html>
